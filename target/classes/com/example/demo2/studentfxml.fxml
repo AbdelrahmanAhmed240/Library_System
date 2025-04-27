@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" prefHeight="303.0" prefWidth="231.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.demo2.StudentPageController" style="-fx-background-color: #f0f0f0; -fx-padding: 20;">
+    <Label text="Available Books" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #333333;" />
+
+    <!-- List of Books with custom styling -->
+    <ListView fx:id="bookListView" prefHeight="200" prefWidth="250" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #cccccc; -fx-font-size: 14px;" />
+
+    <!-- Buy Button with custom styling -->
+    <Button fx:id="buyButton" onAction="#handleBuyBook" text="Buy Book" style="-fx-background-color: #ff8c00; -fx-background-radius: 15; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white; -fx-pref-height: 40; -fx-pref-width: 150;" />
+</VBox>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #4facfe, #00f2fe);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.NewBooksController">
+    <children>
+        <Button fx:id="backButton" mnemonicParsing="false" style="-fx-background-color: transparent;" text="←" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="20.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="10.0" top="10.0" />
+            </VBox.margin>
+        </Button>
+        <Label text="Add New Book" textFill="WHITE" style="-fx-font-size: 24px; -fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets bottom="20.0" left="20.0" top="20.0" />
+            </VBox.margin>
+        </Label>
+        <GridPane vgap="20.0">
+            <children>
+                <Label text="Title:" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label text="No of Copies:" textFill="WHITE" GridPane.columnIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets top="5.0" left="5.0" />
+                    </GridPane.margin>
+                </Label>
+                <Label text="Author Name:" textFill="WHITE" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label text="Price:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets top="5.0" left="5.0" />
+                    </GridPane.margin>
+                </Label>
+                <Label text="ISBN:" textFill="WHITE" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+
+                <TextField fx:id="titleField" maxWidth="150.0">
+                    <GridPane.margin>
+                        <Insets left="150.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="copiesField" maxWidth="150.0" GridPane.columnIndex="1">
+                    <GridPane.margin>
+                        <Insets left="150.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="authorField" maxWidth="150.0" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="150.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="priceField" maxWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="150.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="isbnField" maxWidth="150.0" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="150.0" />
+                    </GridPane.margin>
+                </TextField>
+            </children>
+        </GridPane>
+        <Button fx:id="addButton" prefWidth="200.0" prefHeight="50.0" style="-fx-background-color: #ff8c00; -fx-background-radius: 15;" text="Add Book" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="200.0" top="20.0" />
+            </VBox.margin>
+        </Button>
+    </children>
+    <padding>
+        <Insets left="20.0" right="20.0" />
+    </padding>
+</VBox>
